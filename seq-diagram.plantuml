@@ -1,0 +1,21 @@
+@startuml
+actor User
+
+User -> TelegramBot: Send audio file
+TelegramBot -> SpeechToTextAPI: Convert audio to text
+SpeechToTextAPI -> TelegramBot: Transcribed text
+
+TelegramBot -> ChatGPTAPI: Generate prompt
+ChatGPTAPI -> TelegramBot: Generated prompt
+
+TelegramBot -> ChatGPTAPI: Generate sequence diagrams
+ChatGPTAPI -> TelegramBot: Generated sequence diagrams
+
+TelegramBot -> PlantUMLServer: Generate SVG representation
+PlantUMLServer -> TelegramBot: Generated SVG representation
+
+TelegramBot -> ZipAPI: Compress PlantUML and SVG files
+ZipAPI -> TelegramBot: Compressed zip file
+
+TelegramBot -> User: Send compressed zip file
+@enduml
