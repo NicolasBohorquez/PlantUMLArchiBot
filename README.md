@@ -17,8 +17,8 @@ pip install -r requirements.txt
 then, create a .env file with the bot token and OpenAI API key:
 
 ```sh
-TOKEN="6325628720:AAEnyPZjyjeZ5G4SYAbbIh_FLlkdMuV6YA4"
-OPENAI_API_KEY="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"
+TOKEN="6xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx4"
+OPENAI_API_KEY="sk-zxxxxxxxzzzzzzzzzzzzzzW"
 ```
 
 finally run the bot.py file and start a conversation in telegram with the configured bot:
